@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <div class="container">
+    <h1>Welcome! <a href="{% url 'posts:for_user' username=user.username %}">@{{ user.username }}</a></h1>
+    <h2><a href="{% url 'groups:all' %}">All Groups</a></h2>
+  </div>
+
+{% endblock %}
